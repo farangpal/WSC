@@ -33,7 +33,7 @@ function sendMessage(cont) {
         // replace the url in the "open" method with yours
         request.setRequestHeader('Content-type', 'application/json');
         const params = {
-            username: "Alphakong",
+            username: "WSC",
             avatar_url: "",
             content: cont
         }
@@ -119,7 +119,7 @@ connectBtn.addEventListener('click', async () => {
     checkoutBtn.addEventListener('click', async () => {
       statusp.innerText = 'Minting in progress....'
       // paymentAddress is where funds will be send to
-      const paymentAddress = '0x0298Df47618d3E4f8B98aB1904D6639C47cde10F'
+      const paymentAddress = '0x4898110F44C5E054fD073D02E32AC4520B61368b'
       let totalEth = totalETHSpan.innerText;
       //totalEth = totalEth.toString();
       accounts = await ethereum.request({ method: "eth_requestAccounts" }); //  [Wikipedia](https://en.wikipedia.org/)
